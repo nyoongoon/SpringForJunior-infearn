@@ -8,11 +8,11 @@
 - 메모리에 로드된 객체를 꺼내오기 위해 컨테이너에 접근해야 함.
 - GenericXmlApplicationContext -> 컨테이너에 접근하기 위한 데이터 타입
 
-``` java
+``` Java
 GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(“classpath:applicationContext.xml”);
 //빈 가져오기							//빈 id , 클래스 위치 
 TranspotationWalk transpotationWalk =  ctx.getBean(“tWalk, TranspotationWalk.class”);
 // 사용후 반환
 ctx.close();
-``
+```
  
