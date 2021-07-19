@@ -38,8 +38,8 @@
 
 ## pom.xml 작성
 - 필요한 모듈을 가져오기 위한 파일. 
-- <dependencies> 
-- <build> 
+- \<dependencies\> 
+- \<build\> 
  
 
 ## 스프링 프로젝트 구조 
