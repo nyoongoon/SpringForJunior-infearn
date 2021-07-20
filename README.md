@@ -89,7 +89,6 @@ ctx.close();
  - import - maven - project 
 
 # 6강 - 의존성 주입(생성자)
-# 6강 DI (Dependency injection)
 - 스프링 컨테이너의 기본 개념
 - DI 기본 개념
 
