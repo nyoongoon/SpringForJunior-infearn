@@ -129,7 +129,7 @@ public class ElectronicRobotToy{
 ## 스프링 DI 설정 방법
 
 								
-		스프링 설정파일로 스프링 컨테이너 생성   			    ---->				  			스프링 컨테이너에서 빈 객체 꺼내기
+		스프링 설정파일로 스프링 컨테이너 생성   			    ---->				 스프링 컨테이너에서 빈 객체 꺼내기
 		(applicationContext.xml)		GenericXmlApplicaionContext(				getBean(id, classpath);
 								"classpath:applicationContext.xml");
 
