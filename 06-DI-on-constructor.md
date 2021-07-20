@@ -38,9 +38,9 @@ public class ElectronicRobotToy{
 ## 스프링 DI 설정 방법 (생성자)
 
 								
-		스프링 설정파일로 스프링 컨테이너 생성   			    ---->				  			스프링 컨테이너에서 빈 객체 꺼내기
+		스프링 설정파일로 스프링 컨테이너 생성   			    ---->				 스프링 컨테이너에서 빈 객체 꺼내기
 		(applicationContext.xml)		GenericXmlApplicaionContext(				getBean(id, classpath);
-											"classpath:applicationContext.xml");
+								"classpath:applicationContext.xml");
 
 - applicationContext.xml에서 **생성자로** 의존성 주입하기
 		
