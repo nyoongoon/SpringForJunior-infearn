@@ -72,6 +72,8 @@ TranspotationWalk transpotationWalk =  ctx.getBean(“tWalk, TranspotationWalk.c
 // 사용후 반환
 ctx.close();
 ```
+<br>
+<br>
  
 # 5강 - 다른 방식으로 (로컬에서) 프로젝트 생성하기
 ## 또 다른 프로젝트 생성 방법
@@ -87,6 +89,8 @@ ctx.close();
  - pom.xml 파일 작성할 때, 프로젝트 id 주의 
 
  - import - maven - project 
+<br>
+<br>
 
 # 6강 - 의존성 주입(생성자)
 - 스프링 컨테이너의 기본 개념
@@ -142,6 +146,8 @@ public class ElectronicRobotToy{
 	</bean>
 </beans>
 ```
+<br>
+<br>
 
 # 7강 - 다양한 의존 객체 주입 방법
 
