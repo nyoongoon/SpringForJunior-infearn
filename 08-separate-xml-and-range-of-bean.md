@@ -13,6 +13,7 @@ GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(appCtxs);
 
 - 또는 xml파일 내에서 import엘리먼트를 사용해서 분리된 설정 파일을 합칠 수도 있다. 
 <br/>
+
 ### 빈의 범위
 - 싱글톤 // 프로토타입
 
