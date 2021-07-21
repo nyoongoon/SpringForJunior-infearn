@@ -255,7 +255,7 @@ Object b = ctx.getBean("A");
 cf) new ClassName(); --> 각각 다른 객체
 
 - 프로토타입
-: 싱글톤과 반대대는 개념으로 스프링 설정파일에서 Bean객체를 정의할 때 scope속성을 명시해주면 된다.
+: 싱글톤과 반대되는 개념으로 스프링 설정파일에서 Bean객체를 정의할 때 scope속성을 명시해주면 된다.
 ```xml
 <bean id = "~" class = "~" scope="prototype">
 </bean>
