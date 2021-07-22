@@ -366,8 +366,8 @@ private WordDao wordDao
 					destroy()	<- 빈객체 소멸 시점에 호출
 
 - 자바 파일에서 -> InitializingBean // DisposableBean 인터페이스 구현
--> 빈 객체가 생성 될 때 특정 작업을 작성 -> afterPropertiesSet()
--> 빈 객체가 소멸 될 때 특정 작업을 작성 -> destroy()
+- 빈 객체가 생성 될 때 특정 작업을 작성 -> afterPropertiesSet()
+- 빈 객체가 소멸 될 때 특정 작업을 작성 -> destroy()
 
 ### init-method, destroy-method 속성
 : 빈 객체가 생성\소멸 될 때 특정 작업 구현을 xml에서 설정할 수 있음!
