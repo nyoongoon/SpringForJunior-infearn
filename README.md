@@ -359,11 +359,11 @@ private WordDao wordDao
 
 			<interface>   			<interface>
 			InitializingBean		DisposableBean
-			afterPropertiesSet()	destroy()
-		       		 ↑					 ↑
-						<빈(Bean) 객체>
-						afterPropertiesSet() <- 빈객체 생성 시점에 호출
-						destroy()	<- 빈객체 소멸 시점에 호출
+			afterPropertiesSet()		destroy()
+				 ↑			    ↑
+					<빈(Bean) 객체>
+					afterPropertiesSet() <- 빈객체 생성 시점에 호출
+					destroy()	<- 빈객체 소멸 시점에 호출
 
 - 자바 파일에서 -> InitializingBean // DisposableBean 인터페이스 구현
 -> 빈 객체가 생성 될 때 특정 작업을 작성 -> afterPropertiesSet()
