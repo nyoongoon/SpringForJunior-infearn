@@ -574,10 +574,10 @@ AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
 			-------- View	   ViewResolver
 
 
-- 1. 브라우저 -(HttpRequest)-> DispatcherServlet -> HandlerMapping : 알맞은 컨트롤러 선택 -> DispathcerServlet
-- 2. DispatcherServlet -> HandlerAdapter : 선택된 컨트롤러에서 적합한 메소드를 찾아서 컨트롤러&메소드 호출 -> model&view를 받아서 DispatcherServlet반환 
-- 3. DispatcherSerlvet -> ViewResolver : 받아온 model&view을 사용할 jsp문서 선택 -> DispatcherSerlvet 
-- 4. DispatcherSerlvet -> View(jsp) -(HttpResponse)-> 브라우저 
+1. 브라우저 -(HttpRequest)-> DispatcherServlet -> HandlerMapping : 알맞은 컨트롤러 선택 -> DispathcerServlet
+2. DispatcherServlet -> HandlerAdapter : 선택된 컨트롤러에서 적합한 메소드를 찾아서 컨트롤러&메소드 호출 -> model&view를 받아서 DispatcherServlet반환 
+3. DispatcherSerlvet -> ViewResolver : 받아온 model&view을 사용할 jsp문서 선택 -> DispatcherSerlvet 
+4. DispatcherSerlvet -> View(jsp) -(HttpResponse)-> 브라우저 
 
 ### DispatcherSerlvet 설정 (프레임워크가 생성)
 - web.xml에 서블릿을 매핑
