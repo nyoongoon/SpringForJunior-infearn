@@ -568,10 +568,10 @@ AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
 - 스프링 설정파일로 스프링 컨테이너가 만들어지면 HandlerMapping, HandlerAdapter, ViewResover는 컨테이너 안에 자동 생성 됨!
  
 		    	HandlerMapping	 HandlerAdapter <-> Controller (<-> Service <-> DAO <-> Model <-> DB)
-					 /           /            (요청처리)
-		브라우저 -> DispathcerServlet 
-			↑(응답)	 \(응답생성)	 \(처리결과를 출력할 view선택)
-			-------- View		ViewResolver
+				 /           /        (요청처리)
+		브라우저 ----->  DispathcerServlet 
+			↑(응답)	 \(응답생성)   \(처리결과를 출력할 view선택)
+			-------- View	   ViewResolver
 
 
 - 1. 브라우저 -(HttpRequest)-> DispatcherServlet -> HandlerMapping : 알맞은 컨트롤러 선택 -> DispathcerServlet
@@ -630,8 +630,9 @@ public String success(Model model){
 ```
 
 - DispatcherServlet에게 전달해줄 모델 객체 설정 
-    @ReuqestMapping("/success")
-    public String success(**Model model**){}
+
+				    @ReuqestMapping("/success")
+				    public String success(Model model){
 							     ↓
 			뷰에서 사용 ->	model.setAttribute("속성이름", "속성값")	    
 
@@ -644,9 +645,10 @@ public String success(Model model){
 	<beans:property name="suffix" value=".jsp"/>
 </beans:bean>
 ```	
+
 					<beans:property name="suffix" value=".jsp"/>								
 										↓	
-- -> JSP파일경로 : /WEB-INF/views/success.jsp
+					      -> JSP파일경로 : /WEB-INF/views/success.jsp
 									↑(컨트롤러에서)
 						public String success(Model model){
 							return "success";
