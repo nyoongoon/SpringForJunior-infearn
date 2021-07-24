@@ -646,13 +646,13 @@ public String success(Model model){
 </beans:bean>
 ```	
 
-					<beans:property name="suffix" value=".jsp"/>								
-										↓	
-					      -> JSP파일경로 : /WEB-INF/views/success.jsp
-									↑(컨트롤러에서)
-						public String success(Model model){
-							return "success";
-						}
+		<beans:property name="suffix" value=".jsp"/>								
+							↓	
+		      -> JSP파일경로 : /WEB-INF/views/success.jsp
+						↑(컨트롤러에서)
+			public String success(Model model){
+				return "success";
+			}
 
 
 
