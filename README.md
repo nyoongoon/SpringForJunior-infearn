@@ -588,7 +588,7 @@ AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
 	<init-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
-	</init-param>								<!-- ㄴ> 스프링 설정파일 -->		
+	</init-param>					<!-- ㄴ> 스프링 설정파일 -->		
 	<load-on-startup>1</load-on-startup>
 </servlet>
 
