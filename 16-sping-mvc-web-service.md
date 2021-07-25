@@ -37,8 +37,8 @@
 ```
 
 ### DispatcherServlet (프론트 컨트롤러 -> 요청을 받아 페이지 컨트롤러를 찾게 도와줌)
-1. 사용자의 모든 요청을 DispatcherServlet이 받은 후 HandlerMapping객체에 **Controller 객체 검색** 요청을 한다. 그러면 HandlerMapping 객체는 프로젝트에 존재하는 모든 Controller 객체를 검색하여 적합한 객체를 찾은 후, DispatcherServlet 객체에게 알려준다.
-2. DispatcherServlet 객체는 HandlerAdapter객체에 사용자 요청에 부합하는 **메소드 검색**을 요청한다. 그러면 HandlerAdapter 객체는 사용자의 요청에 부합하는 메소드를 찾아 해당 Controller객체의 메소드를 실행한다. 
+1. 사용자의 모든 요청을 DispatcherServlet이 받은 후 HandlerMapping객체에 **Controller 객체 검색** 요청을 한다. <br/> 그러면 HandlerMapping 객체는 프로젝트에 존재하는 모든 Controller 객체를 검색하여 적합한 객체를 찾은 후, DispatcherServlet 객체에게 알려준다.
+2. DispatcherServlet 객체는 HandlerAdapter객체에 사용자 요청에 부합하는 **메소드 검색**을 요청한다. <br/> 그러면 HandlerAdapter 객체는 사용자의 요청에 부합하는 메소드를 찾아 해당 Controller객체의 메소드를 실행한다. 
 3. 선택된 Controller 객체의 메소드가 실행된 후, Controller 객체는 사용자 응답에 필요한 데이터정보와 뷰정보가 담긴 ModelAndView객체를 HandlerAdapter 객체에 반환한다.
 4. 마지막으로 HandlerAdapter객체는 받은 ModelAndView 객체를 DispatcherSerlvet 객체에 반환한다.
 
