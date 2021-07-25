@@ -73,8 +73,8 @@ public class HomeController {
 	//value == 사용자로부터 "/"요청이 들어오면 실행되는 메소드
 	@RequestMapping(value = "/", method = RequestMethod.GET) //HandlerAdapter가 찾을 수 있게 도와주는 어노테이션
 	public String home(Locale locale, Model model) {
-									// ㄴ> view에서 사용될 데이터를 담은 모델 객체
-		//사용자의 요청을 실제로 처리
+				        	// ㄴ> view에서 사용될 데이터를 담은 모델 객체
+		//사용자의 요청을 실제로 처리하는 로직을 작석
 
 		return "home"; // 알맞은 jsp파일 위치를 ViewResoiver에 String으로 리턴한다.
 	}
