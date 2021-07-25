@@ -19,20 +19,20 @@
 
 ``` xml
 <servlet>
-		<servlet-name>appServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
-			<!--서블릿 초기화 매개변수 : 서블릿을 생성하고 초기화 할 때, 즉 서블릿 컨테이너가 'init()'을 호출할 때 전달하는 데이터. 보통 데이터베이스에서 연결 정보, 시스템 환경 정보 같은 정적인 데이터를 서블릿에 전달할 때 사용 -->
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-		
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern> <!-- 사용자의 모든 요청을 받기 때문에 /로 설정 -->
-	</servlet-mapping>
+	<servlet-name>appServlet</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+		<!--서블릿 초기화 매개변수 : 서블릿을 생성하고 초기화 할 때, 즉 서블릿 컨테이너가 'init()'을 호출할 때 전달하는 데이터. 보통 데이터베이스에서 연결 정보, 시스템 환경 정보 같은 정적인 데이터를 서블릿에 전달할 때 사용 -->
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>appServlet</servlet-name>
+	<url-pattern>/</url-pattern> <!-- 사용자의 모든 요청을 받기 때문에 /로 설정 -->
+</servlet-mapping>
 
 ```
 
