@@ -8,12 +8,13 @@
 7. 실행 
 
 ### 스프링 MVC웹 애플리케이션 제작을 위한 폴더 직접 생성
-/프로젝트명/src/main/java
-/프로젝트명/src/main/webapp
-/프로젝트명/src/main/webapp/resources
-/프로젝트명/src/main/webapp/WEB-INF
-/프로젝트명/src/main/webapp/WEB-INF/spring
-/프로젝트명/src/main/webapp/WEB-INF/views
+
+		/프로젝트명/src/main/java
+		/프로젝트명/src/main/webapp
+		/프로젝트명/src/main/webapp/resources
+		/프로젝트명/src/main/webapp/WEB-INF
+		/프로젝트명/src/main/webapp/WEB-INF/spring
+		/프로젝트명/src/main/webapp/WEB-INF/views
 
 - src와 같은 레벨에 pom.xml 작성 (메이븐 설정파일)
 cf)
