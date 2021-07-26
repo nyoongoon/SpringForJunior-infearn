@@ -17,8 +17,8 @@
 		/프로젝트명/src/main/webapp/WEB-INF/views
 
 - src와 같은 레벨에 pom.xml 작성 (메이븐 설정파일)
-cf)
 
+		cf)
 		GROUP ID
 		group id는 프로젝트마다 구별할 수 있는 고유한 이름이다. 보통은 java의 패키지 네이밍을 따른다. 
 		이 규칙이 강제적인 것은 아니다.
