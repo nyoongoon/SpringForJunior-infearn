@@ -955,10 +955,10 @@ public String memRemove(@ModelAttribyte("mem") Member member) // ---> ID : ${mem
 - 데이터가 기초 데이터 타입인 경우 
 
 		memberJoin.html                                                          Member.java
-		</html>																	 private String memId;	
-		ID : <input type="text" name="memId">								     private String memPw;
-		PW : <input type="password" name="memPw">						==>      private String memMail;
-		MAIL : <input type="text" name="memMail">								 private int memAge;
+		</html>									 private String memId;	
+		ID : <input type="text" name="memId">					 private String memPw;
+		PW : <input type="password" name="memPw">			==>      private String memMail;
+		MAIL : <input type="text" name="memMail">				 private int memAge;
 		AGE : <input type = "text" name= "membAge" size="4" value="0">
 
 - 데이터가 중첩 커맨드 객체(커맨드 객체 안에서 또다른 커맨드 객체를 사용)를 이용한 List 구조인 경우
@@ -966,8 +966,8 @@ public String memRemove(@ModelAttribyte("mem") Member member) // ---> ID : ${mem
 		PHONE1: <input type="text" 
 		name="memPhones[0].memPhone1" size="5"> - 
 		<input type "text" name="memPhones[0].memPhone2" size="5"> -          	 
-		<input type="text" name="memPhones[0].memPhone3" size="5">				Member.java
-		PHONE2: <input type="text" 										==>     private List<MemPhone> memPhones;
+		<input type="text" name="memPhones[0].memPhone3" size="5">		Member.java
+		PHONE2: <input type="text" 					==>     private List<MemPhone> memPhones;
 		name="memPhones[1].memPhone1" size="5"> - 
 		<input type "text" name="memPhones[2].memPhone2" size="5"> - 
 		<input type="text" name="memPhones[3].memPhone3" size="5">
