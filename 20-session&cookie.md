@@ -91,7 +91,8 @@ Member member = (Member) session.getAttribute("member");
 	invalidate() : 세션 객체의 모든 정보를 삭제. 
 <br/>
 ## 쿠키
-###HttpServletResponse로 쿠키 생성
+
+### HttpServletResponse로 쿠키 생성
 - 쿠키를 생성할 때는 생성자에 두 개의 파라미터를 넣어주는데 첫 번째는 쿠키 이름을 넣어주고, 두 번째는 쿠키 값을 넣어 준다. 
 ``` java
 @RequestMapping("/main")
