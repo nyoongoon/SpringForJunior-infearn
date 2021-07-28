@@ -90,6 +90,7 @@ Member member = (Member) session.getAttribute("member");
 	getMaxInactiveInterval() : 세션 객체의 유지시간을 반환.
 	invalidate() : 세션 객체의 모든 정보를 삭제. 
 <br/>
+
 ## 쿠키
 
 ### HttpServletResponse로 쿠키 생성
