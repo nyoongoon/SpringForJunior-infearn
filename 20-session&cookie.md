@@ -11,7 +11,7 @@
 - 웹서비스는 HTTP 프로토콜을 기반으로 하는데, HTTP는 클라이언트와 서버의 관계를 유지하지 않는 특징이 있다.
 - 서버의 부하를 줄일 수 있는 장점은 있으나, 매번 새로운 연결이 생성되기 때문에 일반적인 로그인 상태 유지, 장바구니 등의 기능을 구현하기 어렵다.
 
-	클라이언트 -> 요청(Request) : 서버 연결       ->  서버
+		클라이언트 -> 요청(Request) : 서버 연결       ->  서버
                   	  <- 응답(Response): 서버 연결 해제 <-
 
 <br/>
@@ -35,6 +35,7 @@
 
 ### HttpServletRequest를 이용한 세션 사용
 - 세션을 스프링 컨테이너에게 요청해서 받아오는 개념.
+
 ``` java
 @RequestMapping(value="/login", method=RequestMethod.POST)
 public String memLogin(Member member, HttpServletRequest requests){ //파라미터로 HttpServletRequest받기
@@ -49,12 +50,14 @@ public String memLogin(Member member, HttpServletRequest requests){ //파라미�
 ### HttpSession을 이용한 세션 사용
 - HttpServletRequest와 HttpSession의 차이점은 거의 없으며, 단지 세션 객체를 얻는 방법에 차이가 있음.
 - HttpServletRequest는 getSession()으로 세션 얻음
+
 ``` java
 HttpSession session = request.getSession();
 ```
 
 - HttpSession은 메소드의 파라미터로 HttpSession을 받아 세션 사용.
 - 스프링에서는 이렇게 사용하는 것 가능 -> 주로 이용하는 방법 
+
 ``` java
 @RequestMapping(value="/login", method=RequestMethod.POST)
 public String memLogin(Member member, HttpSession session){ // 메소드의 파라미터로 HttpSession받기
