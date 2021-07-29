@@ -1128,7 +1128,7 @@ return "/mall/index";
 - 지금의 페이지에서 특정 페이지로 전환하는 기능
 
 		modifyForm() -> 회원인증 -> NO : return "redirect:/"; (메인 페이지로 유도)
-		(회원정보 수정 요청)	  |
+		(회원정보 수정 요청)   |
 				YES : "member/modifyForm";
 				(회원정보 수정 페이지로 이동)
 
@@ -1143,10 +1143,10 @@ return "/mall/index";
 		3.preHandle() 6.postHandle()   9.afterCompletion()
  		   4.↓             5.↑         	   7.↓ 8. ↑     
 
-				Hander          	          View
-				(Controller)	
-				   ↓
-				 Response
+			Hander          	      View
+			(Controller)	
+			   ↓
+			 Response
 
 - preHandle() : 주로 쓰임. 컨트롤러가 작업하기 전에 쓰임. 리다이렉트 대체
 ```java
