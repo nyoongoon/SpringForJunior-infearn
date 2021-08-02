@@ -16,10 +16,10 @@
 ## 스프링 프레임워크 모듈
 
 		스프링 모듈 
-		spring-core      : 	 스프링 핵심 기능인 DI와 IoC 기능 
+		spring-core      :   스프링 핵심 기능인 DI와 IoC 기능 
 		spring-aop       :   AOP구현 기능 
-		spring-jdbc       :  DB 쉽게 다룰 수 있는 기능
-		spring-tx 	       :  트랜잭션 관련 기능
+		spring-jdbc      :  DB 쉽게 다룰 수 있는 기능
+		spring-tx 	 :  트랜잭션 관련 기능
 		spring-webmvc : 컨트롤러와 뷰를 이용한 스프링 MVC 구현 기능
 
 - 스프링 프레임워크에서 제공하고 있는 모듈을 사용하려면, 모듈에 대한 의존설정을 개발프로젝트에 XML 파일 들을 이용해 서 개발자가 직접 하면 된다. 
